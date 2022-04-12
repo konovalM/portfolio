@@ -1,0 +1,28 @@
+.title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+    margin: 0;
+    &_main{
+        font-size: 48px;
+    }
+    &_about{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &_center{
+        text-align: center;
+    }
+}
+.subtitle{
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    &_center{
+        text-align: center;
+        padding: 0;
+    }
+}

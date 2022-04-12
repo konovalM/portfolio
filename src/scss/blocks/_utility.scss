@@ -1,0 +1,106 @@
+.utility{
+    padding-top: 120px;
+    min-height: 500px;
+    .subtitle{
+        z-index: 2;
+        position: relative;
+        margin-bottom: 6px;
+        @include center-circle
+    }
+    .title{
+        margin-bottom: 25px;
+    }
+    &__wrapper{
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(320px, 425px));
+        grid-template-rows: minmax(370px, auto);
+        grid-auto-rows: minmax(370px, auto);
+        justify-content: space-between;
+        column-gap: 10px;
+    }
+    &__title{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0;
+        padding-left: 50px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: $mc;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    li{
+        position: relative;
+        &::after{
+            content: '';
+            width: 1px;
+            height: calc(100% + 8px);
+            background-color: #000;
+            position: absolute;
+            left: 7px;
+            top: -8px;
+        }
+    }
+    ul{
+        padding: 0;
+        list-style-type: none;
+    }
+    &__item{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 36px;
+            background-color: #000;
+            left: 7px;
+            top: 59px;
+        }
+        &-head{
+            padding: 45px 0 0 99px;
+            margin-bottom: 12px;
+        }
+        &-icon{
+            position: absolute;
+            left: 60px;
+            top: 55px;
+            &::before{
+                content: '';
+                width: 36px;
+                height: 36px;
+                border-radius: 100%;
+                background-color: $mc;
+                position: absolute;
+                left: -17px;
+                top: -14px;
+                z-index: -1;
+            }
+        }
+        &-title{
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-subtitle{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-body{
+            padding-left: 43px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    
+}

@@ -1,0 +1,6 @@
+@mixin hover-btn{
+    &:hover{
+        background-image: none;
+        background-color: #4a79b6;
+    }
+}

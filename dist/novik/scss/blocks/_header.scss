@@ -1,0 +1,62 @@
+.header{
+    min-height: 768px;
+    padding: 33px 0 105px;
+    &__list{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 31px;
+        border-bottom: 1px solid #828282;
+    }
+    &__item{
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: #828282;
+        &_main{
+            color: #070707;;
+        }
+        &:hover{
+            transition: .1s all;
+            color: rgb(204, 175, 238);
+        }
+    }
+    &__bio{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }    
+    &__name{
+        font-weight: bold;
+        font-size: 47.3392px;
+        line-height: 57px;
+        color: #070707;
+    }
+    &__info{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #070707;
+        padding-top: 55px;
+    }
+    &__lang{
+        display: inline;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #828282;
+        
+        transform: rotate(-90deg) translateY(70px);
+        
+        
+        text-align: right;
+        span{
+            color: #000000;
+        }
+    }
+    &__photo{
+        margin-top: 30px;
+    }
+}

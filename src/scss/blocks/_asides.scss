@@ -1,0 +1,35 @@
+.social{
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    width: 340px;
+    justify-content: space-between;
+    transform: rotate(-90deg) translate(0, -150px);
+    &__text{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__line{
+        width: 70px;
+        height: 2px;
+        background-color: #000;
+    }
+    &__vk{
+        width: 26px;
+        transition: .5s;
+        &:hover{
+            transform: rotate(360deg);
+        }
+    }
+    &__rotate{
+        transform: rotate(90deg);
+        transition: .5s;
+        &:hover{
+            transform: rotate(450deg);
+        }
+    }
+    
+}

@@ -1,0 +1,54 @@
+.footer{
+    min-height: 500px;
+    padding: 114px 0 123px;
+    &__title{
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 41px;
+        text-align: center;
+        color: #070707;
+    }
+    &__descr{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #070707;
+        margin: 20px 0 29px;
+    }
+    &__btn{
+        display: block;
+        margin: 0 auto;
+        width: 180.5px;
+        height: 42px;
+        background: #070707;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 20px;
+        &:hover{
+            transition: .2s all;
+            box-shadow: 9px 9px 20px #828282;
+            color: pink;
+
+        }
+    }
+    .social{
+        display: flex;
+        width: 350px;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    &__advice{
+        margin-top: 45px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #828282;
+    }
+}
